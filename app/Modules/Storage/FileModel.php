@@ -10,10 +10,10 @@ class FileModel extends Model {
     protected $fillable = ['nome', 'directory_id', 'user_id'];
 
     public function user() {
-        $this->belongsTo(UserModel::class,  'user_id', 'id');
+        return $this->belongsTo(UserModel::class, 'user_id', 'id');
     }
 
     public function directory() {
-        $this->belongsTo(DirectoryModel::class, 'directory_id', 'id');
+        return $this->belongsTo(DirectoryModel::class, 'directory_id', 'id');
     }
 }
