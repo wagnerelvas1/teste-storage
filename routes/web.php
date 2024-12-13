@@ -15,3 +15,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [StorageController::class, 'index']);
+
+Route::post('/create/directory', [StorageController::class, 'createDirectory'])->name('criaDiretorio');
+Route::post('/create/file', [StorageController::class, 'createFile'])->name('enviaArquivo');
+
+
+
+

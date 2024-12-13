@@ -15,6 +15,10 @@ class StorageController extends Controller {
         return view('index');
     }
 
+    public function createDirectory() {
+        
+    }
+
 
 }
 
